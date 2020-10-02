@@ -9,7 +9,14 @@ const { Schema, model } = require("mongoose");
 
 const artSchema = new Schema({
   username: { type: String, required: true },
-  title: String
+  title:{ type: String }, 
+  artist: { type: String },
+  year: { type: Number },
+  technique: { type: String },
+  size: { type: String },
+  info: { type: String },
+  img: { type: String },
+  value: { type: String }
 });
 
 ////////////////////////////////////

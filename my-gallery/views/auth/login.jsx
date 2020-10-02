@@ -5,11 +5,20 @@ class Login extends React.Component {
   render() {
     return (
       <Layout title="LOGIN">
-        <form action="/auth/login" method="post">
-          <input type="text" name="username" placeholder="username"/>
-          <input type="text" name="password" placeholder="password"/>
-          <input type="submit" value="login"/>
-        </form>
+        <h1 className="welcome-h1">Welcome! Login to access your <span className="logo-my">my</span>Louve</h1>
+        <div className="login-box"> 
+          <form action="/auth/login" method="post">
+            <div className="user-box">
+              <input type="text" name="username"/>
+              <label>Username</label>
+            </div>
+            <div className="user-box">
+              <input type="password" name="password"/>
+              <label>Password</label>
+            </div>    
+            <div><input className="input-submit" type="submit" value="login"/></div>
+          </form>
+        </div>
       </Layout>
     );
   }
