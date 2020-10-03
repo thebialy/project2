@@ -6,8 +6,11 @@ class Index extends React.Component {
     const { art } = this.props
     return (
       <Layout title="My Gallery">
-        <h1> My Gallery </h1>     
-        <h2>{art.title}</h2>
+        <div>
+          <h1> My Gallery </h1>     
+          <h2>{art.title}</h2>  
+        </div>
+        
           <div className="frame">
             <div className="mat">
               <div className="art">

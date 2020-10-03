@@ -5,74 +5,42 @@ class Index extends React.Component {
   render() {
     return (
       <Layout title="The Title!">
-        <div className="container"> 
-                <h1 className="show-name text-center">Add New Piece of Art to myLouvre</h1>               
-                <form className="form-horizontal" action="/art/" method="POST">
-                    <div className="form-group">
-                        <div className="input-group-prepend">
-                            <span className="input-group-text input">Title</span>
-                        </div>
-                        <div className="col-sm-10">
-                            <input className="form-control" type="text" name="title"/>
-                        </div>
+          <h1 className="show-name text-center">Add New Piece of Art to myLouvre</h1> 
+        <div className="login-box new-box">               
+                <form action="/art/" method="POST">
+                    <div className="user-box">
+                        <input type="text" name="title"/>
+                            <label>Title</label>
                     </div>
-                    <div className="form-group">
-                        <div className="input-group-prepend">
-                            <span className="input-group-text input text-center">Artist</span>
-                        </div>
-                        <div className="col-sm-10">
-                            <input className="form-control" type="text" name="artist"></input>
-                        </div>
+                    <div className="user-box">
+                        <input type="text" name="artist"/>
+                            <label>Artist</label>
                     </div>
-                    <div className="form-group">
-                        <div className="input-group-prepend">
-                            <span className="input-group-text input">Year</span>
-                        </div>
-                        <div className="col-sm-10">
-                        <input className="form-control" type="text" name="year"/>
-                        </div>
+                    <div className="user-box">
+                        <input type="text" name="year"/>
+                            <label>Year</label>
                     </div>
-                    <div className="form-group">
-                        <div className="input-group-prepend">
-                            <span className="input-group-text input">Technique</span>
-                        </div>
-                        <div className="col-sm-10">
-                        <input className="form-control" type="text" name="technique"/>
-                        </div>
+                    <div className="user-box">
+                        <input type="text" name="technique"/>
+                            <label>Technique</label>
                     </div>
-                    <div className="form-group">
-                        <div className="input-group-prepend">
-                            <span className="input-group-text input">Size</span>
-                        </div>
-                        <div className="col-sm-10">
-                        <input className="form-control" type="text" name="size"/>
-                        </div>
+                    <div className="user-box">
+                        <input type="text" name="size"/>
+                            <label>Size</label>
                     </div>
-                    <div className="form-group">
-                        <div className="input-group-prepend">
-                            <span className="input-group-text input">Info</span>
-                        </div>
-                        <div className="col-sm-10">
-                          <textarea className="form-control" type="text" name="info"/>
-                        </div>
+                    <div className="user-box">
+                        <input type="text" name="img"/>
+                            <label>Image URL</label>
                     </div>
-                    <div className="form-group">
-                        <div className="input-group-prepend">
-                            <span className="input-group-text input">Image</span>
-                        </div>
-                        <div className="col-sm-10">
-                          <input className="form-control" type="text" name="img"/>
-                        </div>
+                    <div className="user-box">
+                        <input type="text" name="value"/>
+                            <label>Value</label>
                     </div>
-                    <div className="form-group">
-                        <div className="input-group-prepend">
-                            <span className="input-group-text input">Value</span>
-                        </div>
-                        <div className="col-sm-10">
-                          <input className="form-control" type="text" name="value"/>
-                        </div>
+                    <div className="user-box">
+                        <textarea name="info" cols="30" rows="3"></textarea> 
+                            <label>Info</label>
                     </div>
-                    <input className="col-sm-3 text-center btn btn-primary btn-lg btn-block" type="submit" name="" value="Add to collection"/>                      
+                    <div><input type="submit" className="input-submit" value="Add to Collection"/></div>    
                 </form>
             </div>            
       </Layout>

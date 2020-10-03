@@ -8,10 +8,10 @@ class Index extends React.Component {
       <Layout title={art.title}>
         <div className="container">
           <div className="art-info">
-            <div className="show-name text-center"><h2>{art.name}</h2></div>
+            <div className="show-name text-center"><h2>{art.title}</h2></div>
             <br/>
             <div><img className="show-img art-info img-fluid" src={art.img}/></div> <br/>
-            <div className="candy-info">
+            <div className="art-info">
                 <p>{art.info}</p>
             </div>
             <br/>
